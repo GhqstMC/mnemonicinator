@@ -1,0 +1,23 @@
+/* this file is loaded by index.html and styles the page */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2em 1em;
+  line-height: 1.5em;
+}
+
+
+
+
+#mnemonic-paragraph {
+  font-size: 150%;
+}
+
+#mnemonic-paragraph span:hover {
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
+}

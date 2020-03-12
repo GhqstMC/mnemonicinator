@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Set the language of the page-->
+  <head>
+    <meta charset="utf-8" /> <!-- Set the charset of the page -->
+    <title>Random Mnemonic</title> <!-- Define the title of the page (in the tab) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Basic metadata for proper mobile rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Again, for mobile browsers -->
+    <meta name="description" content="Random Mnemonic Generator for Logic Students"/> <!-- Add some metadata description for things like Google. -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script> <!-- Import jquery because it's required for Fomantic :( -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css"> <!-- Import Fomantic's CSS (styling) -->
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.js"></script> <!-- Import Fomantic's scripting -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> <!-- Import Font Awesome for icons! -->
+    <link rel="stylesheet" href="/style.css" /> <!-- Finally, import our own local stylesheet from inside the public folder -->
+    <script src="/script.js" defer></script> <!-- and of course our local script file -->
+  </head>
+  <body>
+    <h1 class="ui header">Random Logic Mnemonic Generator</h1>
+    <div class="ui message">
+      <div class="header">
+        A Note to Discovery Of Deduction Students
+      </div>
+      <p>You aren't allowed to use this site for your bonus assignment :P</p>
+    </div>
+    <div id="mnemonic-container" class="ui segment">
+      <p id="mnemonic-paragraph">
+        <span id="aaa1" data-tooltip="AAA-1" onclick="goToPage('aaa1')">AAA-1</span>,
+        <span id="eae1" onclick="goToPage('eae1')">EAE-1</span>,
+        <span id="aii1" onclick="goToPage('aii1')">AII-1</span>,
+        <span id="eio1" onclick="goToPage('eio1')">EIO-1</span>,
+        <i data-tooltip='"of the first [figure]"'>que prioris</i>;
+        <span id="eae2" onclick="goToPage('eae2')">EAE-2</span>,
+        <span id="aee2" onclick="goToPage('aee2')">AEE-2</span>,
+        <span id="eio2" onclick="goToPage('eio2')">EIO-2</span>,
+        <span id="aoo2" onclick="goToPage('aoo2')">AOO-2</span> <i data-tooltip='"second [figure]"'>secundae</i>;
+        <i data-tooltip='"Third [figure]"'>Tertia</i>, <span id="aai3" onclick="goToPage('aai3')">AAI-3</span>,
+        <span id="iai3" onclick="goToPage('iai3')">IAI-3</span>,
+        <span id="aii3" onclick="goToPage('aii3')">AII-3</span>,
+        <span id="eao3" onclick="goToPage('eao3')">EAO-3</span>,
+        <span id="oao3" onclick="goToPage('oao3')">OAO-3</span>,
+        <span id="eio3" onclick="goToPage('eio3')">EIO-3</span> <i data-tooltip='"has"'>habet</i>;
+        <i data-tooltip='"Finally, fourth [figure] has"'>Quarta in super addit</i>
+        <span id="aai4" onclick="goToPage('aai4')">AAI-4</span>,
+        <span id="aee4" onclick="goToPage('aee4')">AEE-4</span>,
+        <span id="iai4" onclick="goToPage('iai4')">IAI-4</span>,
+        <span id="eao4" onclick="goToPage('eao4')">EAO-4</span>,
+        <span id="eio4" onclick="goToPage('eio4')">EIO-4</span>
+      </p>
+    </div>
+    <div id="mnemonic-form" class="ui segment">
+      <div onclick="randomizeArray()" class="large green ui animated button">
+        <div class="visible content">Randomize</div>
+        <div class="hidden content">
+          <i class="right arrow icon"></i>
+        </div>
+      </div>
+      <div class="ui checkbox">
+        <input type="checkbox" id="english-words">
+        <label>Use English Words</label>
+      </div>
+      <div class="ui checkbox">
+        <input type="checkbox" id="english-names">
+        <label>Use English Names</label>
+      </div>
+      <div class="ui checkbox">
+        <input type="checkbox" id="english-cities">
+        <label>Use English Cities</label>
+      </div>
+      <div class="ui checkbox">
+        <input type="checkbox" id="spanish-words">
+        <label>Use Spanish Words</label>
+      </div>
+      <div class="ui checkbox">
+        <input type="checkbox" id="french-words">
+        <label>Use French Words</label>
+      </div>
+    </div>
+    <p>
+       This is a random mnemonic generator! Just click the button to create an entirely new array!<br/> If you don't know the meaning of a word, click it to be taken to its wiktionary page.
+      You can also check the boxes to change whether english words or names appear in the mmemonic! (May not work perfectly.) All words retrieved and sorted from third party databases.
+    </p>
+  </body>
+</html>
