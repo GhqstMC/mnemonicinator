@@ -14,7 +14,7 @@
     "better-sqlite3": "^6.0.1",
     "bulma": "^0.8.0",
     "enmap": "^5.2.4",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "engines": {
     "node": "12.x"
